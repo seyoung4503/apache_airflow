@@ -1,0 +1,60 @@
+# -----------------------
+# Airflow (docker-compose) runtime artifacts
+# -----------------------
+logs/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# If you use a local SQLite (not recommended for docker-compose, but just in case)
+airflow.db
+airflow.db-shm
+airflow.db-wal
+
+# Airflow local config overrides (keep if you want to version-control)
+config/airflow.cfg
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# -----------------------
+# Docker / OS junk
+# -----------------------
+*.log
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# IDE
+# -----------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------
+# Python virtualenv (if you ever run locally)
+# -----------------------
+.venv/
+venv/
+env/
+
+# -----------------------
+# Build / distribution (if you package anything)
+# -----------------------
+dist/
+build/
+*.egg-info/
+
+# -----------------------
+# Optional: Airflow plugins cache / temp
+# -----------------------
+plugins/__pycache__/
